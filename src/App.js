@@ -1,14 +1,12 @@
-import './App.css';
+import './App.scss';
 
 export const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-
-        <code>
-          big idea.
+        <code className="header-text">
+          big idea
         </code>
-
       </header>
     </div>
   );
