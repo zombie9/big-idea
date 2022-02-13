@@ -7,13 +7,23 @@
     "jest": true
   },
   "extends": [
-    "eslint:recommended", "plugin:prettier/recommended", "plugin:react/recommended"
+    "eslint:recommended", 
+    "plugin:prettier/recommended", 
+    "plugin:react/recommended", 
+    "plugin:jsx-a11y/recommended"
   ],
 
-  "plugins": ["prettier", "react", "import", "react-hooks"],
+  "plugins": [
+    "prettier", 
+    "react", 
+    "import", 
+    "react-hooks",
+    "jsx-a11y"
+  ],
 
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "eol-last": ["error", "always"]
   },
 
   "parser": "@babel/eslint-parser",
