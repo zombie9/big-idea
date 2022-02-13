@@ -10,7 +10,8 @@
     "eslint:recommended", 
     "plugin:prettier/recommended", 
     "plugin:react/recommended", 
-    "plugin:jsx-a11y/recommended"
+    "plugin:jsx-a11y/recommended",
+    "plugin:import/recommended"
   ],
 
   "plugins": [
@@ -23,7 +24,23 @@
 
   "rules": {
     "prettier/prettier": "error",
-    "eol-last": ["error", "always"]
+    "eol-last": ["error", "always"],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "alphabetize": {
+          "order": "asc"
+        },
+        "newlines-between": "always"
+      }
+    ]
   },
 
   "parser": "@babel/eslint-parser",
@@ -41,6 +58,12 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"],
+          "moduleDirectory": ["node_modules", "src/"]
+      }
     }
   }
 }
