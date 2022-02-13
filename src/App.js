@@ -1,13 +1,11 @@
+import React from 'react';
 import './App.scss';
+import { Header } from './components/header/Header';
 
 export const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <code className="header-text">
-          big idea
-        </code>
-      </header>
+      <Header />
     </div>
   );
-}
+};
