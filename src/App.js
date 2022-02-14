@@ -1,12 +1,13 @@
 import React from 'react';
 
-import './App.scss';
+import GlobalStyles from './GlobalStyles';
 import { Header } from './components/header/Header';
 
 export const App = () => {
   return (
-    <div className="App">
+    <>
+      <GlobalStyles />
       <Header />
-    </div>
+    </>
   );
 };
