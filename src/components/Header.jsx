@@ -15,6 +15,7 @@ const Box = styled.div`
   background: ${({ theme }) => theme.panel};
   width: 50%;
   text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const HeaderText = styled.code`
