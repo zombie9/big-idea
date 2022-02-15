@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background: ${({ theme }) => theme.text};
+  background: none;
   color: ${({ theme }) => theme.text};
   border: 1px solid ${({ theme }) => theme.text};
   cursor: pointer;
