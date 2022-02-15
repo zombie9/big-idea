@@ -25,6 +25,7 @@
   "rules": {
     "prettier/prettier": "error",
     "eol-last": ["error", "always"],
+    "react/prop-types": 0,
     "import/order": [
       "error",
       {

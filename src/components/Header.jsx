@@ -2,14 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+`;
+
+const Box = styled.div`
+  padding: 1rem 2rem 1.5rem 2rem;
+  background: ${({ theme }) => theme.panel};
+  width: 50%;
+  text-align: center;
 `;
 
 const HeaderText = styled.code`
@@ -31,8 +36,10 @@ const tagLine = "[what's the]";
 export const Header = () => {
   return (
     <StyledHeader>
-      <SmallText>{tagLine}</SmallText>
-      <HeaderText>big idea?</HeaderText>
+      <Box>
+        <SmallText>{tagLine}</SmallText>
+        <HeaderText>big idea</HeaderText>
+      </Box>
     </StyledHeader>
   );
 };

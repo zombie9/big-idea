@@ -21,6 +21,9 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
+    background: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
+    transition: all 0.50s linear;
     font-family: 'Montserrat';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
