@@ -19,6 +19,11 @@ const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    width: 30%;
+    min-width: 424px;
+  }
 `;
 
 const HeaderText = styled.code`
