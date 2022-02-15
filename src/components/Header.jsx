@@ -11,15 +11,20 @@ const StyledHeader = styled.header`
 `;
 
 const Box = styled.div`
-  padding: 1rem 2rem 1.5rem 2rem;
+  padding: 2rem 2rem 2.5rem 2rem;
   background: ${({ theme }) => theme.panel};
-  width: 50%;
+  width: 75%;
   text-align: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const HeaderText = styled.code`
   display: block;
+  width: fit-content;
+  align-self: center;
   transition: transform 200ms ease-in-out;
 
   &:hover {
@@ -30,6 +35,15 @@ const HeaderText = styled.code`
 
 const SmallText = styled.p`
   font-size: small;
+  display: block;
+  width: fit-content;
+  align-self: center;
+  transition: transform 200ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
 `;
 
 const tagLine = "[what's the]";

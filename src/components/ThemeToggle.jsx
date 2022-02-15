@@ -11,6 +11,10 @@ const Button = styled.button`
   top: 1rem;
   right: 1rem;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background: ${({ theme }) => theme.panel};
+  }
 `;
 
 export const ThemeToggle = ({ theme, toggleTheme }) => {
